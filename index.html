@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://liamclarke1705-alt.github.io/">
+<meta property="og:title" content="Liam Clarke | Digital Innovation Specialist">
+<meta property="og:description" content="Liam Clarke: Digital Innovation Specialist driving technology and AI adoption at scale through strategy, coaching and mentoring. Portfolio 2026.">
+<meta property="og:image" content="https://liamclarke1705-alt.github.io/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://liamclarke1705-alt.github.io/">
+<link rel="icon" href="img/favicon.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Liam Clarke Portfolio</title>
+<meta name="description" content="Liam Clarke: Digital Innovation Specialist driving technology and AI adoption at scale through strategy, coaching and mentoring. Portfolio 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: clean white consultant page. Soft grey rounded panels, one bright blue accent,
+   hand-drawn blue scribbles as the only flourish. Deliberately single (light) theme. */
+:root {
+  --bg: #ffffff;
+  --panel: #f4f5f7;
+  --panel-tint: #e6f0f9;
+  --ink: #0e0f12;
+  --text: #2a2d33;
+  --muted: #7a7f88;
+  --line: #e2e4e8;
+  --blue: #0a84d6;
+  --blue-dark: #0670b8;
+  --navy: #12263a;
+  --navy-line: #7cc3e6;
+  --ghost: #ececee;
+
+  --font: "Plus Jakarta Sans", "Segoe UI", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --radius-lg: 28px;
+  --radius: 18px;
+  --wrap: 1280px;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 1rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 50; background: var(--bg); }
+h1, h2, h3 { font-weight: 500; color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+img { display: block; max-width: 100%; height: auto; }
+.b { color: var(--blue); }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
+
+.wrap {
+  max-width: calc(var(--wrap) + 2 * 40px); margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 760px) { .wrap { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); } }
+
+.eyebrow { color: var(--muted); font-size: 0.95rem; }
+.btn { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: #fff; text-decoration: none; font: 500 0.95rem/1 var(--font); padding: 12px 22px; border-radius: 999px; border: 0; cursor: pointer; transition: background .15s ease, transform .15s ease; white-space: nowrap; }
+.btn:hover { background: var(--blue-dark); transform: translateY(-1px); }
+.btn svg { width: 16px; height: 16px; }
+.panel { background: var(--panel); border-radius: var(--radius-lg); }
+.panel.tint { background: linear-gradient(120deg, var(--panel) 45%, var(--panel-tint)); }
+section { padding-block: clamp(56px, 8vw, 110px); }
+
+/* Header */
+.head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); }
+.head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 18px; }
+.logo { font-size: 1.3rem; line-height: 1.05; font-weight: 500; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+.nav { display: flex; gap: 34px; }
+.nav a { text-decoration: none; color: var(--ink); font-size: 1rem; }
+.nav a:hover { color: var(--blue); }
+@media (max-width: 920px) { .nav { display: none; } }
+
+/* Hero */
+.hero { position: relative; padding-block: 0; overflow: hidden; }
+.hero-name { font-size: clamp(4rem, 15.5vw, 13rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--ghost); text-align: center; white-space: nowrap; margin: clamp(24px, 4vw, 48px) 0 0; user-select: none; }
+.hero-stage { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; gap: 24px; margin-top: clamp(-150px, -10vw, -40px); }
+.hero-photo { position: relative; align-self: end; display: flex; justify-content: center; }
+.hero-photo::before { content: ""; position: absolute; inset: 12% -10% 0; background: radial-gradient(closest-side, #d6ebfb, rgba(214,235,251,0) 100%); z-index: 0; }
+.hero-photo img { position: relative; z-index: 1; width: min(100%, 520px); filter: contrast(1.04); }
+.hero-card { background: var(--panel); border-radius: 22px; padding: 32px 34px; display: grid; gap: 14px; justify-items: start; max-width: 380px; }
+.hero-card h2 { font-size: 1.55rem; color: var(--blue); letter-spacing: -0.015em; }
+.hero-card p { font-size: 0.95rem; color: var(--text); }
+.hero-right { display: grid; gap: 22px; max-width: 360px; justify-self: end; }
+.hero-right h1 { font-size: 1.6rem; letter-spacing: -0.015em; }
+.hero-right p { font-size: 1rem; color: var(--text); }
+.stat { display: grid; gap: 2px; position: relative; padding-bottom: 34px; }
+.stat b { font-size: 3rem; font-weight: 500; color: var(--blue); line-height: 1; letter-spacing: -0.03em; display: flex; align-items: center; gap: 6px; }
+.stat b svg { width: 34px; height: 34px; }
+.stat em { font-size: 0.95rem; color: var(--ink); }
+.stat .squiggle { position: absolute; left: 60px; bottom: 0; width: 260px; height: 40px; }
+@media (max-width: 980px) {
+  .hero-stage { grid-template-columns: 1fr; margin-top: -40px; justify-items: center; }
+  .hero-photo { order: -1; }
+  .hero-card, .hero-right { max-width: 560px; width: 100%; justify-self: center; }
+}
+
+/* Serious panel */
+.serious { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 60px); padding: clamp(28px, 4.5vw, 60px); align-items: stretch; }
+.serious-copy { display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-width: 0; }
+.serious h2 { font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); }
+.circled { position: relative; display: inline-block; padding-inline: 4px; color: var(--blue); }
+.circled svg { position: absolute; inset: -16% -10% -22% -8%; width: 118%; height: 138%; pointer-events: none; overflow: visible; }
+.worked { display: grid; gap: 14px; }
+.worked p { color: var(--ink); max-width: 40ch; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.chips li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 0.88rem; color: var(--ink); }
+.cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+.note { display: flex; gap: 10px; align-items: flex-start; font-size: 0.85rem; color: var(--muted); max-width: 34ch; line-height: 1.45; }
+.note svg { flex: none; width: 16px; height: 16px; margin-top: 2px; }
+.serious-photo { border-radius: 22px; overflow: hidden; min-height: 320px; }
+.serious-photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 860px) { .serious { grid-template-columns: 1fr; } .serious-photo { min-height: 0; aspect-ratio: 4 / 3; } }
+
+/* Numbers */
+.center-head { text-align: center; display: grid; gap: 14px; justify-items: center; position: relative; }
+.center-head h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.1rem); }
+.arrow { position: absolute; top: 28px; width: clamp(70px, 9vw, 130px); color: var(--blue); }
+.arrow.l { left: 0; } .arrow.r { right: 0; }
+@media (max-width: 700px) { .arrow { display: none; } }
+.truths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; max-width: 1080px; margin: clamp(36px, 5vw, 60px) auto 0; }
+.truth { background: var(--panel); border-radius: 22px; padding: 44px 32px 40px; display: grid; gap: 26px; justify-items: center; text-align: center; }
+.truth svg { width: 92px; height: 92px; color: var(--ink); }
+.truth p { color: var(--ink); max-width: 26ch; }
+.truth strong { font-weight: 500; color: var(--blue); }
+@media (max-width: 820px) { .truths { grid-template-columns: 1fr; max-width: 460px; } }
+
+.brief { max-width: 1080px; margin: 32px auto 0; padding: 40px 24px; text-align: center; display: grid; gap: 18px; justify-items: center; }
+.brief h3 { font-size: 1.55rem; }
+.brief p { color: var(--ink); max-width: 46ch; }
+.mailbox { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; justify-content: center; width: 100%; }
+.field { display: flex; align-items: center; gap: 12px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; width: min(100%, 390px); color: var(--ink); }
+.field svg { width: 20px; height: 20px; color: var(--muted); flex: none; }
+.field span { user-select: all; overflow-wrap: anywhere; }
+.small { font-size: 0.82rem; color: var(--muted); }
+
+/* Carousels */
+.carousel { padding: clamp(28px, 4.5vw, 60px) 0 0; overflow: hidden; }
+.carousel-head { padding-inline: clamp(28px, 4.5vw, 60px); display: grid; gap: 14px; }
+.carousel-head h2 { font-size: clamp(1.7rem, 1.2rem + 1.8vw, 2.4rem); max-width: 26ch; }
+.track { display: flex; gap: 28px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: clamp(28px, 4.5vw, 60px); padding: clamp(32px, 4vw, 52px) clamp(28px, 4.5vw, 60px); scrollbar-width: none; }
+.track::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 min(88%, 1000px); scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); align-items: center; }
+.slide .pic { border-radius: 20px; overflow: hidden; aspect-ratio: 6 / 5; background: #dfe3e8; }
+.slide .pic img { width: 100%; height: 100%; object-fit: cover; }
+.slide-copy { display: grid; gap: 4px; min-width: 0; }
+.slide-copy h3 { font-size: 1.55rem; color: var(--blue); letter-spacing: -0.015em; }
+.slide-copy .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
+.slide-copy p + p { margin-top: 10px; }
+.slide-copy .hl { color: var(--blue); }
+@media (max-width: 760px) { .slide { flex-basis: 86%; grid-template-columns: 1fr; align-items: start; } .slide .pic { aspect-ratio: 4 / 3; } }
+.carousel-foot { border-top: 1px solid var(--line); padding: 28px clamp(28px, 4.5vw, 60px) 36px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.carousel-foot p { color: var(--ink); max-width: 44ch; font-size: 0.95rem; }
+.arrows { display: flex; gap: 24px; }
+.round { width: 48px; height: 48px; border-radius: 50%; background: var(--blue); color: #fff; border: 0; display: grid; place-items: center; cursor: pointer; flex: none; transition: background .15s ease; }
+.round:hover { background: var(--blue-dark); }
+.round svg { width: 18px; height: 18px; }
+
+/* Services */
+.services { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: clamp(24px, 3vw, 24px) 24px; align-items: start; }
+.services-intro { display: grid; gap: 22px; position: sticky; top: 110px; }
+.services-intro h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.1rem); }
+.services-intro p { color: var(--ink); max-width: 34ch; }
+.svc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.svc { background: var(--panel); border-radius: var(--radius-lg); padding: 38px 38px 36px; display: flex; flex-direction: column; gap: 18px; }
+.svc > svg { width: 74px; height: 74px; color: var(--ink); }
+.svc h3 { font-size: 1.4rem; color: var(--blue); letter-spacing: -0.015em; }
+.svc p { color: var(--ink); flex: 1; }
+.svc .btn { align-self: flex-start; margin-top: 14px; }
+@media (max-width: 980px) { .services { grid-template-columns: 1fr; } .services-intro { position: static; } }
+@media (max-width: 640px) { .svc-grid { grid-template-columns: 1fr; } .svc { padding: 30px 26px; } }
+
+/* Speaking */
+.speak { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 24px; align-items: stretch; }
+.speak-intro { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; padding-top: 50px; }
+.speak-intro h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.1rem); }
+.speak-intro .eyebrow { display: block; margin-bottom: 18px; }
+.palace { display: flex; gap: 16px; align-items: center; }
+.palace b { display: block; font-size: 1.6rem; font-weight: 500; color: var(--ink); line-height: 1.1; }
+.palace span { color: var(--blue); font-size: 0.95rem; line-height: 1.35; display: block; }
+.palace-badge { width: 64px; height: 64px; border-radius: 50%; background: var(--panel); display: grid; place-items: center; color: var(--blue); flex: none; }
+.palace-badge svg { width: 32px; height: 32px; }
+.quote-card { background: var(--panel); border-radius: var(--radius-lg); padding: 38px; display: grid; gap: 22px; min-width: 0; }
+.quote-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; gap: 38px; }
+.quote-track::-webkit-scrollbar { display: none; }
+.q-slide { flex: 0 0 100%; scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 38px; align-items: stretch; }
+.q-slide .pic { border-radius: 18px; overflow: hidden; aspect-ratio: 9 / 10; background: #dfe3e8; }
+.q-slide .pic img { width: 100%; height: 100%; object-fit: cover; }
+.q-text { display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
+.q-text .mark { font-size: 6rem; line-height: 0.7; color: #b9dbf3; font-family: Georgia, serif; height: 56px; }
+.q-text p { color: var(--ink); }
+.q-foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.q-foot h3 { font-size: 1.4rem; color: var(--blue); }
+.q-foot small { color: var(--muted); font-size: 0.88rem; display: block; }
+@media (max-width: 980px) { .speak { grid-template-columns: 1fr; } .speak-intro { padding-top: 0; } }
+@media (max-width: 640px) { .q-slide { grid-template-columns: 1fr; } .q-slide .pic { aspect-ratio: 4 / 3; } .quote-card { padding: 22px; } .q-text .mark { height: 40px; font-size: 4.5rem; } }
+
+/* Credentials */
+.creds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin-top: clamp(36px, 5vw, 56px); }
+.cred { all: unset; box-sizing: border-box; cursor: zoom-in; background: var(--panel); border-radius: 22px; padding: 18px 18px 24px; display: grid; gap: 16px; align-content: start; transition: transform .2s ease; }
+.cred:hover { transform: translateY(-3px); }
+.cred:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.cred .thumb { aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; background: #fff; }
+.cred .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.cred b { display: block; font-weight: 500; color: var(--ink); font-size: 1.05rem; line-height: 1.3; padding-inline: 6px; }
+.cred span { display: block; color: var(--blue); font-size: 0.88rem; padding-inline: 6px; margin-top: 4px; }
+.more-creds { text-align: center; margin-top: 26px; color: var(--muted); font-size: 0.95rem; }
+.more-creds button { all: unset; cursor: pointer; color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.more-creds button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+@media (max-width: 900px) { .creds { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Final CTA */
+.final { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; min-height: 400px; }
+.final-copy { padding: clamp(32px, 4.5vw, 60px); display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
+.final-copy h2 { font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); }
+.final-copy p { color: var(--ink); max-width: 36ch; margin-top: 18px; }
+.final-art { position: relative; min-height: 300px; }
+.final-art svg { position: absolute; right: 0; bottom: 0; width: 100%; height: 100%; }
+@media (max-width: 820px) { .final { grid-template-columns: 1fr; } .final-art { min-height: 240px; } }
+
+/* Footer */
+.foot { padding: clamp(32px, 4.5vw, 60px); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr); gap: 40px; margin-bottom: 40px; }
+.foot-left { display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
+.foot-left h3 { font-size: 1rem; font-weight: 600; }
+.foot-left p { color: var(--ink); max-width: 34ch; margin-top: 16px; }
+.foot-field { display: flex; align-items: center; gap: 12px; border: 1.5px solid var(--ink); border-radius: 999px; padding: 12px 12px 12px 18px; margin-top: 26px; max-width: 380px; }
+.foot-field svg.mail { width: 20px; height: 20px; color: var(--muted); flex: none; }
+.foot-field span { flex: 1; font-size: 0.92rem; color: var(--ink); overflow-wrap: anywhere; user-select: all; }
+.foot-field button { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); border: 0; color: #fff; display: grid; place-items: center; cursor: pointer; flex: none; }
+.foot-field button svg { width: 14px; height: 14px; }
+.foot-name { font-size: clamp(2.4rem, 1.8rem + 2vw, 3.2rem); font-weight: 500; color: var(--ink); line-height: 1; letter-spacing: -0.02em; }
+.foot-bottom { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 60px; }
+.foot-bottom small { color: var(--muted); font-size: 0.85rem; }
+.foot-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 24px; align-content: start; }
+.foot-cols h4 { margin: 0 0 16px; font-size: 1rem; font-weight: 600; color: var(--ink); }
+.foot-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.foot-cols a, .foot-cols li { color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.foot-cols a:hover { color: var(--blue); }
+@media (max-width: 900px) { .foot { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .foot-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Viewer */
+dialog { border: 0; padding: 0; background: transparent; max-width: min(92vw, 1000px); max-height: 92vh; }
+dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
+.viewer { display: grid; gap: 12px; justify-items: center; }
+.viewer img { max-height: 80vh; width: auto; border-radius: 10px; background: #fff; }
+.viewer-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; width: 100%; color: #fff; }
+.viewer-bar button { all: unset; cursor: pointer; padding: 8px 16px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 0.9rem; }
+
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 999px; font-size: 0.9rem; opacity: 0; transition: opacity .2s ease, transform .2s ease; pointer-events: none; z-index: 60; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+@keyframes up { from { transform: translateY(18px); opacity: .001; } to { transform: none; opacity: 1; } }
+.hero-photo img { animation: up .8s cubic-bezier(.2,.7,.2,1) both; }
+.hero-card, .hero-right { animation: up .8s .12s cubic-bezier(.2,.7,.2,1) both; }
+
+/* v5: flow, slideshows, uncropped media */
+.sec-title { display: grid; gap: 12px; margin-bottom: clamp(28px, 4vw, 48px); }
+.sec-title h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.1rem); }
+.sec-title p { color: var(--ink); max-width: 64ch; }
+.sec-title.center { text-align: center; justify-items: center; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.tags li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; font-size: 0.82rem; color: var(--blue); font-weight: 500; letter-spacing: 0.02em; }
+.serious-copy .body { display: grid; gap: 14px; color: var(--ink); max-width: 60ch; }
+.intro-p { max-width: 70ch; margin: 0 auto; color: var(--ink); text-align: center; }
+.truths.six { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(28px, 4vw, 44px); }
+.truths.six .truth { padding: 32px 24px 28px; gap: 18px; }
+.truths.six .truth svg { width: 64px; height: 64px; }
+.truths.six .truth p { color: var(--blue); font-weight: 500; font-size: 1.08rem; letter-spacing: -0.01em; }
+@media (max-width: 820px) { .truths.six { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: none; } }
+.brief.outcome { text-align: left; justify-items: start; padding: clamp(28px, 4vw, 44px); }
+.brief.outcome p { max-width: none; }
+
+/* Slideshow (shared) */
+.show { position: relative; border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
+.show-frame { position: relative; aspect-ratio: var(--ratio, 4 / 3); }
+.show-slide { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; transition: opacity .45s ease, visibility .45s; display: grid; }
+.show-slide.on { opacity: 1; visibility: visible; }
+.show-slide img, .show-slide video { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.show-slide.cover img { object-fit: cover; }
+.show-nav { position: absolute; inset: auto 12px 12px 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; pointer-events: none; }
+.show-nav > * { pointer-events: auto; }
+.show-dots { display: flex; gap: 6px; background: rgba(14,15,18,.55); padding: 6px 9px; border-radius: 999px; }
+.show-dots button { all: unset; width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.5); cursor: pointer; }
+.show-dots button.on { background: #fff; }
+.show-dots button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.show-arrows { display: flex; gap: 8px; }
+.show-arrows button { width: 34px; height: 34px; border-radius: 50%; border: 0; background: rgba(255,255,255,.92); color: var(--ink); display: grid; place-items: center; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+.show-arrows button svg { width: 14px; height: 14px; }
+.show-count { position: absolute; top: 12px; right: 12px; background: rgba(14,15,18,.6); color: #fff; font-size: 0.75rem; padding: 3px 9px; border-radius: 999px; }
+
+/* Project carousel slides */
+.slide { align-items: start; }
+.slide .show { --ratio: 4 / 3; }
+.slide-copy p { font-size: 0.97rem; }
+.slide-copy h3 { margin-bottom: 14px; }
+
+/* Media design: uncropped masonry */
+.masonry { columns: 3 300px; column-gap: 22px; }
+.mcard { all: unset; box-sizing: border-box; display: block; break-inside: avoid; margin-bottom: 22px; background: var(--panel); border-radius: 22px; padding: 14px 14px 18px; cursor: zoom-in; width: 100%; }
+.mcard.video { cursor: default; }
+.mcard:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.mcard img, .mcard video { width: 100%; height: auto; border-radius: 12px; background: #fff; display: block; }
+.mcard b { display: block; font-weight: 500; color: var(--ink); font-size: 1rem; margin: 12px 6px 0; }
+.mcard span { display: block; color: var(--muted); font-size: 0.86rem; margin: 2px 6px 0; }
+
+/* Speaking */
+.speak-intro-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); color: var(--ink); }
+@media (max-width: 820px) { .speak-intro-grid { grid-template-columns: 1fr; } }
+.stage { margin-top: clamp(28px, 4vw, 44px); padding: clamp(18px, 2.5vw, 28px); display: grid; gap: 18px; }
+.stage { grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); align-items: start; column-gap: clamp(18px, 2.5vw, 32px); }
+.stage .show { --ratio: 4 / 3; background: #10161d; border: 0; grid-row: span 2; }
+.stage .thumbs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; }
+.stage .thumbs button { flex: none; width: 100%; }
+@media (max-width: 860px) { .stage { grid-template-columns: 1fr; } .stage .show { grid-row: auto; } .stage .thumbs { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .stage .thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.stage .show-slide img { background: #10161d; }
+.stage-cap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start; padding-top: 6px; gap: 12px 24px; padding-inline: 6px; }
+.stage-cap h3 { font-size: 1.4rem; color: var(--blue); }
+.stage-cap p { color: var(--muted); font-size: 0.95rem; }
+.thumbs { display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 6px; scrollbar-width: thin; }
+.thumbs button { all: unset; flex: 0 0 116px; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; cursor: pointer; opacity: .55; outline: 2px solid transparent; outline-offset: 2px; transition: opacity .2s ease; background: #10161d; }
+.thumbs button.on { opacity: 1; outline-color: var(--blue); }
+.thumbs button:focus-visible { outline-color: var(--blue); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; }
+
+.palace-feature { margin-top: 24px; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); padding: clamp(18px, 2.5vw, 28px); align-items: center; }
+.palace-feature img { width: 100%; border-radius: 16px; }
+.palace-feature .copy { display: grid; gap: 14px; padding-right: clamp(0px, 2vw, 24px); }
+.palace-feature h3 { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+.palace-feature p { color: var(--ink); }
+@media (max-width: 860px) { .palace-feature { grid-template-columns: 1fr; } }
+
+.creds { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .creds { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.contact-list { list-style: none; margin: 22px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; }
+.contact-list li { display: grid; gap: 2px; }
+.contact-list small { color: var(--muted); font-size: 0.85rem; }
+.contact-list a, .contact-list span { color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.contact-list a:hover { color: var(--blue); }
+@media (max-width: 480px) { .contact-list { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arr" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="arl" viewBox="0 0 16 16"><path d="M14 8H3M7 4L3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="head">
+  <div class="wrap">
+    <a class="logo" href="#top">Liam<br>Clarke</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#accreditation">Accreditation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Contact <svg><use href="#arr"/></svg></a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1. Hero -->
+  <div class="hero wrap">
+    <p class="hero-name" aria-hidden="true">Liam Clarke</p>
+    <div class="hero-stage">
+      <div class="hero-card">
+        <span class="eyebrow">[ Portfolio 2026 ]</span>
+        <h2>Liam Clarke</h2>
+        <ul class="tags"><li>Digital Innovation Specialist</li><li>M.Ed Digital Leadership</li></ul>
+        <a class="btn" href="#contact">Contact <svg><use href="#arr"/></svg></a>
+      </div>
+      <div class="hero-photo"><img src="img/headshot.webp" alt="Portrait of Liam Clarke" width="724" height="799"></div>
+      <div class="hero-right">
+        <h1>Digital Innovation <span class="b">Specialist</span></h1>
+        <p>I'm a digital transformation leader with an M.Ed in Digital Leadership (First Class Honours), specialising in <span class="b">technology and AI adoption at scale</span>. Through strategy, coaching and mentoring, I turn new tools into everyday practice for 400+ educators and 4,000+ students.</p>
+        <div class="stat">
+          <b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V4M5 11l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>27</b>
+          <em>schools shaped through Aldar's Digital Task Force</em>
+          <svg class="squiggle" viewBox="0 0 260 40" aria-hidden="true"><path d="M6 32 C 40 26, 70 22, 104 20 C 118 19, 128 18, 122 22 C 112 28, 96 30, 112 28 C 150 22, 200 14, 254 6" fill="none" stroke="#0a84d6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. About -->
+  <div class="wrap" id="about">
+    <div class="panel tint serious">
+      <div class="serious-copy">
+        <div style="display:grid;gap:14px">
+          <span class="eyebrow">[ About Me ]</span>
+          <h2>Driving technology and AI adoption <span class="circled">at scale.<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true"><path d="M8 26 C 6 10, 50 4, 86 6 C 112 8, 120 20, 112 32 C 100 46, 40 48, 16 40 C 4 36, 2 26, 14 18" fill="none" stroke="#0a84d6" stroke-width="2.4" stroke-linecap="round"/></svg></span></h2>
+        </div>
+        <div class="body">
+          <p>As Head of Digital Learning &amp; Innovation at Yasmina British Academy, part of Aldar Education, I lead digital strategy for <span class="b">400+ educators and 4,000+ students</span>, and sit on Aldar's Digital Task Force, shaping direction across 27 schools. I have represented Aldar at global forums including BETT and Apple HQ London, and regularly presents at regional EdTech conferences across the UAE.</p>
+          <p>My work spans <span class="b">technology and AI adoption at scale</span>, curriculum design, platform rollout and staff development. I build the strategy, training, coaching and mentoring that turn new technology into everyday practice, so that adoption lasts long after launch.</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="#projects">View Projects <svg><use href="#arr"/></svg></a>
+          <ul class="chips" aria-label="Highlights"><li>BETT</li><li>Apple HQ London</li><li>Aldar's Digital Task Force</li></ul>
+        </div>
+      </div>
+      <div class="serious-photo"><img src="img/stage-talk.webp" alt="Liam presenting on stage at a conference" width="600" height="800"></div>
+    </div>
+  </div>
+
+  <!-- 3. Strategy -->
+  <section class="wrap" id="strategy" aria-labelledby="strat-h">
+    <div class="center-head">
+      <svg class="arrow l" viewBox="0 0 130 90" aria-hidden="true"><path d="M6 8 C 30 40, 60 60, 104 62 M86 44 C 96 52, 106 58, 112 62 C 104 70, 96 76, 88 82" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="arrow r" viewBox="0 0 130 90" aria-hidden="true"><path d="M124 6 C 104 40, 70 60, 26 62 M44 44 C 34 52, 24 58, 18 62 C 26 70, 34 76, 42 82" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="eyebrow">[ Strategy ]</span>
+      <h2 id="strat-h">Whole-School <br><span class="b">Digital Strategy</span></h2>
+      <p class="intro-p">At Yasmina British Academy, I play a leading role in the designing and implementation of the school's whole-school digital strategy, the foundation upon which all other innovation projects have been built. This strategy aligns pedagogy, infrastructure and professional growth under one unified digital vision. It ensures that every student, educator and parent develops the digital fluency, creativity and critical thinking needed to thrive in a rapidly evolving technological world. The strategy is guided by six key pillars, each interconnected to guarantee sustainable growth and consistent impact across all phases of the school.</p>
+    </div>
+    <div class="truths six">
+      <div class="truth"><svg viewBox="0 0 92 92" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 80h64M20 80V40h16v40M40 80V24h16v56M60 80V50h14v30"/><path d="M24 48h8M24 58h8M44 32h8M44 42h8M44 52h8M64 58h6"/></svg><p>Environment &amp; Infrastructure</p></div>
+      <div class="truth"><svg viewBox="0 0 92 92" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="30" r="14"/><path d="M16 80c0-16 10-26 24-26s24 10 24 26"/><path d="M62 30l8-10 8 10M70 20v24"/></svg><p>Professional Development</p></div>
+      <div class="truth"><svg viewBox="0 0 92 92" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 26c12-6 24-6 36 2 12-8 24-8 36-2v46c-12-6-24-6-36 2-12-8-24-8-36-2z"/><path d="M46 28v46"/></svg><p>Pedagogy</p></div>
+      <div class="truth"><svg viewBox="0 0 92 92" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="46" cy="28" r="10"/><circle cx="18" cy="40" r="8"/><circle cx="74" cy="40" r="8"/><path d="M28 76c0-12 8-20 18-20s18 8 18 20M4 72c0-9 6-14 14-14 4 0 7 1 9 3M88 72c0-9-6-14-14-14-4 0-7 1-9 3"/></svg><p>Community Engagement</p></div>
+      <div class="truth"><svg viewBox="0 0 92 92" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M46 8l5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2z"/><circle cx="46" cy="56" r="8"/><path d="M30 84c0-10 7-16 16-16s16 6 16 16"/><circle cx="18" cy="62" r="6"/><circle cx="74" cy="62" r="6"/><path d="M6 84c0-7 5-11 12-11M86 84c0-7-5-11-12-11"/></svg><p>Leadership</p></div>
+      <div class="truth"><svg viewBox="0 0 92 92" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="22" y="10" width="48" height="66" rx="4"/><path d="M32 26h28M32 36h28M32 46h28M32 56h18"/><path d="M14 22v62h48"/></svg><p>Curriculum</p></div>
+    </div>
+    <div class="panel tint brief outcome">
+      <p>The outcome has been transformative. Technology is now seamlessly woven into daily teaching and learning, supported by strong data systems, a clear digital progression model and innovative classroom practices. This strategy played a pivotal role in helping Yasmina achieve <span class="b">ADEK, BSO and High Performance Learning (HPL) World Class status, for Innovation</span>, validating the success of our integrated approach. More importantly, it has established a digital culture where technology is not a supplement to education, but a catalyst for deeper learning, creativity, and curiosity.</p>
+    </div>
+  </section>
+
+  <!-- 4. Projects -->
+  <div class="wrap" id="projects">
+    <div class="panel tint carousel">
+      <div class="carousel-head">
+        <span class="eyebrow">[ Projects ]</span>
+        <h2>The Projects That <span class="b">Bring the Strategy to Life</span></h2>
+      </div>
+      <div class="track" id="cases" tabindex="0" aria-label="Projects, scroll sideways">
+
+        <article class="slide">
+          <div class="show" data-show>
+            <div class="show-frame">
+              <figure class="show-slide on"><video src="video/hub-demo.mp4" poster="img/hub-poster.webp" muted loop playsinline preload="metadata" aria-label="Walkthrough of the Innovation Hub platform"></video></figure>
+              <figure class="show-slide"><img src="img/hub-videos-1.webp" alt="Innovation Hub training video library"></figure>
+              <figure class="show-slide"><img src="img/hub-videos-2.webp" alt="More Innovation Hub training videos"></figure>
+            </div>
+          </div>
+          <div class="slide-copy">
+            <h3>The Innovation Hub</h3>
+            <p>To make professional learning accessible to our entire school community, I designed and launched the Innovation Hub. The Innovation Hub is a central digital platform that serves as the heartbeat of Yasmina's technology ecosystem. The Hub hosts each of my on-demand training videos, weekly technology announcements and a curated library of AI integration guides, templates and walkthroughs created specifically for our staff. It enables teachers to engage in self-paced professional learning, revisit previous CPD sessions and stay updated with emerging tools and innovation updates across the school.</p>
+            <p>Beyond being a resource bank, the Innovation Hub represents a shift in culture. It empowers staff to take ownership of their professional growth, fosters collaboration between departments and ensures that innovation remains visible, practical, and sustainable. With <span class="hl">over 80% of teachers accessing the Hub each term</span>, it has become the foundation for continuous improvement and a model for how schools can embed professional learning into their daily practice.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="show" data-show>
+            <div class="show-frame">
+              <figure class="show-slide cover on"><img src="img/training-room.webp" alt="Liam leading a staff training session"></figure>
+              <figure class="show-slide cover"><img src="img/staff-training.webp" alt="Staff taking part in a CPD workshop"></figure>
+              <figure class="show-slide cover"><img src="img/presenting-screen.webp" alt="Liam presenting new tools to staff"></figure>
+              <figure class="show-slide"><img src="img/cpd-sessions.webp" alt="Covers of CPD sessions Liam has run, including ClassVR, MagicSchool, AI Teacher Toolkit, Apple Classroom, iPad and Seesaw"></figure>
+            </div>
+          </div>
+          <div class="slide-copy">
+            <h3>Educator Coaching, Mentoring and Development</h3>
+            <p>Empowering teachers sits at the core of my leadership philosophy. I have developed a structured, continuous program of professional learning, coaching and mentoring that builds confidence, creativity and capability in digital pedagogy. Through a bespoke whole-school CPD calendar and a daily co-teaching mentorship model, I have supported staff in integrating AI, enhancing digital creativity and using Apple technologies to transform teaching and learning. Each session is intentionally designed to be part of a sustained learning cycle, encouraging experimentation, reflection and collaboration so that professional growth becomes an embedded culture rather than a single event.</p>
+            <p>Beyond the above, I have built capacity through the creation of our <span class="hl">Innovation Drive Team</span>, a community of staff innovators who lead digital initiatives across different year groups. This distributed leadership model allows digital growth to scale authentically from within, ensuring every staff member contributes to and benefits from the school's collective innovation journey.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="show" data-show>
+            <div class="show-frame">
+              <figure class="show-slide on"><img src="img/roadmap-1.webp" alt="ICT skills roadmap: topics and outcomes for one year group"></figure>
+              <figure class="show-slide"><img src="img/roadmap-2.webp" alt="ICT skills roadmap for another year group"></figure>
+              <figure class="show-slide"><img src="img/roadmap-3.webp" alt="Year 3 ICT skills roadmap"></figure>
+              <figure class="show-slide"><img src="img/roadmap-4.webp" alt="Year 5 ICT skills roadmap"></figure>
+            </div>
+          </div>
+          <div class="slide-copy">
+            <h3>Curriculum Design</h3>
+            <p>I have designed a comprehensive Computing and Digital Learning curriculum roadmap that spans Nursery to Year 8, ensuring a coherent and progressive development of skills that transition smoothly into middle school. The roadmap is built around YBA's Digital Competence Framework, which leverages ISTE Standards for Students. Each year group has clear outcomes, practical applications and project-based learning experiences that foster both technical ability and creativity, building from play-based technology exploration in early years to problem-solving, coding and robotics in later stages.</p>
+            <p>The curriculum is enhanced through the integration of state-of-the-art equipment including LEGO Spike, mBot2 robotics, drones, 3D printers, BBC Micro:bits, alongside Apple technology such as iPads, Apple Classroom and the "Everyone Can Create" series. <span class="hl">Its success led Aldar Education to request that it be shared as a model of best practice across other schools within the network.</span></p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="show" data-show>
+            <div class="show-frame">
+              <figure class="show-slide on"><img src="img/iste-standards.webp" alt="The seven ISTE Standards for Students"></figure>
+              <figure class="show-slide"><img src="img/framework-doc.webp" alt="YBA Digital Competence Framework document"></figure>
+              <figure class="show-slide"><img src="img/framework-doc-2.webp" alt="Digital Competence Framework, further strands"></figure>
+            </div>
+          </div>
+          <div class="slide-copy">
+            <h3>Digital Competence Framework</h3>
+            <p>In alignment with the key ISTE Student Standards, I developed a bespoke Digital Competence Framework. This framework ensures that students not only thrive in the digital world but also engage with technology in meaningful and effective ways, across other subject areas.</p>
+            <p>It is directly integrated into computing lessons and visibly displayed in classrooms, providing <span class="hl">a clear roadmap for students to develop essential digital skills and literacy</span> as they navigate an increasingly complex technological landscape.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="show" data-show>
+            <div class="show-frame">
+              <figure class="show-slide cover on"><img src="img/students-competition.webp" alt="Liam with a student team at a digital competition"></figure>
+              <figure class="show-slide cover"><img src="img/students-exhibition.webp" alt="Students presenting their project at an exhibition"></figure>
+              <figure class="show-slide cover"><img src="img/student-robotics.webp" alt="Liam with Digital Leaders and their robotics build"></figure>
+              <figure class="show-slide cover"><img src="img/students-project.webp" alt="Students showcasing their project"></figure>
+            </div>
+          </div>
+          <div class="slide-copy">
+            <h3>Student Leadership</h3>
+            <p>Each year, I coordinate the annual appointment of Digital Leaders in YBA, offering pupils the opportunity to act as ambassadors for technology and innovation. These students support peers, assist teachers and drive schoolwide digital campaigns, and enrol in various AI programs to build their confidence and competence with AI. I also guide and prepare students for external digital competitions such as Formula Ethara, Mubarmij50, FIRST LEGO League and the High Performance Learning Future Innovators challenge.</p>
+            <p><span class="hl">In academic year 24/25, our digital leaders won the HPL Future Innovators competition.</span> Students created an AI-powered application called "Mathify", which visualises complex mathematical concepts for students. For winning the competition, the team worked with a professional app developer to create an MVP of their product.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="show" data-show>
+            <div class="show-frame">
+              <figure class="show-slide on"><img src="img/apple-student-roadmap.webp" alt="Apple Student Roadmap: learn new skills, take quizzes, earn badges, get certified"></figure>
+              <figure class="show-slide"><img src="img/apple-student.webp" alt="What is an Apple Student?"></figure>
+              <figure class="show-slide"><img src="img/apple-apps.webp" alt="iMovie, iPad, Keynote and Freeform badges"></figure>
+            </div>
+          </div>
+          <div class="slide-copy">
+            <h3>Apple Genius Program</h3>
+            <p>To further enhance student capability, I designed the YBA Apple Genius Program, a self-paced certification pathway that enables students to become mastery-level users of Apple technology. This program leverages Apple's "Everyone Can Create" framework, allowing learners to explore creativity through photography, video, drawing and music while advancing their technical proficiency in Keynote, iMovie and Freeform, with digital badges awarded at key milestones.</p>
+            <p>It has quickly become <span class="hl">one of the most engaging enrichment programs in the school</span>. This program runs in alignment with YBA's Apple Teacher Program, an Apple-certified program all staff are encouraged to complete during induction week.</p>
+          </div>
+        </article>
+      </div>
+      <div class="carousel-foot">
+        <p>Six projects. Use the arrows to move between them.</p>
+        <div class="arrows">
+          <button class="round" type="button" data-scroll="cases" data-dir="-1" aria-label="Previous project"><svg><use href="#arl"/></svg></button>
+          <button class="round" type="button" data-scroll="cases" data-dir="1" aria-label="Next project"><svg><use href="#arr"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Media design -->
+  <section class="wrap" id="media-design" aria-labelledby="media-h">
+    <div class="sec-title">
+      <span class="eyebrow">[ Media Design ]</span>
+      <h2 id="media-h">Media <span class="b">Design</span></h2>
+      <p>I have been commended for exceptional media design skills that balance high production quality with educational purpose. My work spans whole-school professional websites, corporate policy &amp; governance documentation, social media campaigns, brand identity assets and executive-level presentations, as well as visual materials for parent communication and strategic initiatives. On a classroom level, I am hugely passionate about creating AI-generated immersive learning environments for children, to spark creativity and enhance student engagement.</p>
+    </div>
+    <div class="masonry">
+      <div class="mcard video"><video src="video/newsletter-demo.mp4" poster="img/newsletter-poster.webp" muted loop playsinline controls preload="metadata" aria-label="Walkthrough of the whole-school parent newsletter website"></video><b>Community Communication</b><span>Whole-school newsletter built as a website</span></div>
+      <button class="mcard" data-full="img/house-crest.webp" data-cap="YBA house coat of arms, derived from children's drawings"><img src="img/house-crest.webp" alt="YBA house coat of arms"><b>YBA House Coat of Arms</b><span>Derived from children's drawings</span></button>
+      <button class="mcard" data-full="img/immersive-environment.webp" data-cap="AI-generated immersive learning environment"><img src="img/immersive-environment.webp" alt="AI-generated immersive learning environment"><b>AI-Generated Immersive Environment</b><span>Created to spark creativity in class</span></button>
+      <button class="mcard" data-full="img/digital-wellbeing-strategy.webp" data-cap="Digital Wellbeing Strategy 2025–2027"><img src="img/digital-wellbeing-strategy.webp" alt="Digital Wellbeing Strategy document cover"><b>Digital Wellbeing Strategy</b><span>Professional strategy document</span></button>
+      <button class="mcard" data-full="img/immersive-classroom.webp" data-cap="An immersive environment in use in the classroom"><img src="img/immersive-classroom.webp" alt="Students learning with an immersive scene on screen"><b>Immersive Learning in Action</b><span>Used in the classroom</span></button>
+      <button class="mcard" data-full="img/device-management.webp" data-cap="Device management guide for parents"><img src="img/device-management.webp" alt="Device management guide for parents"><b>Parent Communication</b><span>Device management guide</span></button>
+      <button class="mcard" data-full="img/phone-wellbeing.webp" data-cap="Mobile phone and digital watch wellbeing support"><img src="img/phone-wellbeing.webp" alt="Mobile phone and digital watch wellbeing support document"><b>Wellbeing Policy Document</b><span>Mobile phone and digital watch support</span></button>
+      <button class="mcard" data-full="img/class-of-2026.webp" data-cap="Year 6 Class of 2026, digital signage content"><img src="img/class-of-2026.webp" alt="Year 6 Class of 2026 digital signage"><b>Digital Signage Content</b><span>Year 6 Class of 2026</span></button>
+    </div>
+  </section>
+
+  <!-- 6. Speaking & recognition -->
+  <section class="wrap" id="speaking" aria-labelledby="speak-h" style="padding-top:0">
+    <div class="sec-title">
+      <span class="eyebrow">[ Speaking &amp; Recognition ]</span>
+      <h2 id="speak-h">Wider Influence <span class="b">Across Region &amp; Beyond</span></h2>
+    </div>
+    <div class="speak-intro-grid">
+      <p>I regularly present at education and EdTech conferences across the Middle East, sharing practical insights on AI adoption, digital strategy and innovative teaching and learning models. Recent sessions include the Al Ain Teachers Conference, the Century Tech AI in Education event, Kaligo Learn &amp; Go's webinar and the Abu Dhabi Teaching Conference.</p>
+      <p>My influence extends beyond the region too. I've represented Aldar Education at BETT and Apple HQ in London, engaging directly with international education leaders and Apple's own education team on emerging practice in AI adoption and large-scale device deployment. This work was also featured in YallaAbuDhabi's 2025 article.</p>
+    </div>
+
+    <div class="panel stage">
+      <div class="show" data-show data-caption="stage-cap" data-thumbs="stage-thumbs">
+        <div class="show-frame">
+          <figure class="show-slide on" data-title="Abu Dhabi Teaching Conference 2026" data-sub="From Prompt to Reality: AI-Powered Virtual Classrooms"><img src="img/adtc-2026.webp" alt="Abu Dhabi Teaching Conference 2026 speaker card for Liam Clarke"></figure>
+          <figure class="show-slide" data-title="AI in Education, Century Tech" data-sub="Panel speaker, Swiss International Scientific School, Dubai"><img src="img/century-ai-stage.webp" alt="Stage at the Century Tech AI in Education event"></figure>
+          <figure class="show-slide" data-title="AI in Education Panel" data-sub="Alongside leaders from Nord Anglia, Bloom Education and Reach British School"><img src="img/century-ai-poster.webp" alt="AI in Education panel speakers"></figure>
+          <figure class="show-slide" data-title="BETT UK 2026" data-sub="Representing Aldar Education, London"><img src="img/bett-2026.webp" alt="Liam at BETT UK 2026"></figure>
+          <figure class="show-slide" data-title="Apple HQ" data-sub="With Apple's education team on AI adoption and large-scale device deployment, London"><img src="img/apple-hq-london.webp" alt="Liam with colleagues at Apple HQ in London"></figure>
+          <figure class="show-slide" data-title="Al Ain Teachers Conference" data-sub="Confirmed presenter, Brighton College Al Ain"><img src="img/aact-presenter.webp" alt="Al Ain Teachers Conference presenter card"></figure>
+          <figure class="show-slide" data-title="Kaligo Learn &amp; Go Webinar" data-sub="From Classroom Practice to Measurable Impact"><img src="img/kaligo-webinar.webp" alt="Kaligo webinar speaker card"></figure>
+          <figure class="show-slide" data-title="Conference Keynote" data-sub="Presenting to educators across the UAE"><img src="img/stage-talk.webp" alt="Liam presenting on stage"></figure>
+          <figure class="show-slide" data-title="Workshop for Educators" data-sub="Hands-on Canva workshop"><img src="img/canva-workshop-stage.webp" alt="Liam leading a workshop on stage"></figure>
+        </div>
+      </div>
+      <div class="stage-cap" id="stage-cap"><div><h3></h3><p></p></div></div>
+      <div class="thumbs" id="stage-thumbs" aria-label="Choose a photo"></div>
+    </div>
+
+    <div class="panel tint palace-feature">
+      <button class="mcard" style="padding:0;background:none;margin:0" data-full="img/presidential-palace.webp" data-cap="Presidential Palace, World Teachers Day"><img src="img/presidential-palace.webp" alt="Group photo at the Presidential Palace for World Teachers Day, with Liam and the UAE President highlighted"></button>
+      <div class="copy">
+        <span class="eyebrow">[ Recognition ]</span>
+        <h3>Presidential Palace <span class="b">Invitation</span></h3>
+        <p>In recognition of my work in educational innovation throughout the UAE, I was invited to the Presidential Palace for World Teachers Day as part of a select group of educators from across the region. This invitation acknowledged exceptional contributions to education and the wider teaching profession.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Accreditation -->
+  <section class="wrap" id="accreditation" aria-labelledby="cred-h" style="padding-top:0">
+    <div class="sec-title center">
+      <span class="eyebrow">[ Accreditation ]</span>
+      <h2 id="cred-h"><span class="b">Accreditation</span></h2>
+    </div>
+    <div class="creds">
+      <button class="cred" data-full="img/cert-med.webp" data-cap="Master of Education, Digital Leadership in Education, First Class Honours. University of Limerick"><div class="thumb"><img src="img/cert-med.webp" alt=""></div><div><b>Master of Education</b><span>Digital Leadership in Education, First Class Honours</span></div></button>
+      <button class="cred" data-full="img/cert-google-innovator.webp" data-cap="Google for Education Certified Innovator"><div class="thumb"><img src="img/cert-google-innovator.webp" alt=""></div><div><b>Google for Education</b><span>Certified Innovator</span></div></button>
+      <button class="cred" data-full="img/cert-gemini.webp" data-cap="Gemini Certified Educator"><div class="thumb"><img src="img/cert-gemini.webp" alt=""></div><div><b>Gemini Certified Educator</b><span>Google for Education</span></div></button>
+      <button class="cred" data-full="img/cert-magicschool.webp" data-cap="AI Educator Certification Level 3, MagicSchool"><div class="thumb"><img src="img/cert-magicschool.webp" alt=""></div><div><b>AI Educator Certification</b><span>Level 3, MagicSchool</span></div></button>
+      <button class="cred" data-full="img/cert-apple-teacher.webp" data-cap="Apple Teacher"><div class="thumb"><img src="img/cert-apple-teacher.webp" alt=""></div><div><b>Apple Teacher</b><span>Apple</span></div></button>
+      <button class="cred" data-full="img/cert-google-l2.webp" data-cap="Google Certified Educator Level 2"><div class="thumb"><img src="img/cert-google-l2.webp" alt=""></div><div><b>Google Certified Educator</b><span>Level 2</span></div></button>
+      <button class="cred" data-full="img/cert-google-l1.webp" data-cap="Google Certified Educator Level 1"><div class="thumb"><img src="img/cert-google-l1.webp" alt=""></div><div><b>Google Certified Educator</b><span>Level 1</span></div></button>
+      <button class="cred" data-full="img/cert-aldar-trainer.webp" data-cap="Aldar Training Academy: Becoming A Trainer Part 1 and 2"><div class="thumb"><img src="img/cert-aldar-trainer.webp" alt=""></div><div><b>Becoming A Trainer Part 1 and 2</b><span>Aldar Training Academy</span></div></button>
+      <button class="cred" data-full="img/cert-seesaw.webp" data-cap="Seesaw Pioneer '24-'25"><div class="thumb"><img src="img/cert-seesaw.webp" alt=""></div><div><b>Seesaw Pioneer '24-'25</b><span>Seesaw</span></div></button>
+      <button class="cred" data-full="img/cert-canva-ai.webp" data-cap="AI in the classroom, Canva Design School"><div class="thumb"><img src="img/cert-canva-ai.webp" alt=""></div><div><b>AI in the Classroom</b><span>Canva Design School</span></div></button>
+      <button class="cred" data-full="img/cert-canva-essentials.webp" data-cap="Teacher Essentials, Canva Design School"><div class="thumb"><img src="img/cert-canva-essentials.webp" alt=""></div><div><b>Teacher Essentials</b><span>Canva Design School</span></div></button>
+      <a class="cred" href="#contact" style="cursor:pointer;display:grid;place-content:center;text-align:center;min-height:200px"><div><b style="color:var(--blue)">Get in Touch</b><span style="color:var(--muted)">Contact</span></div></a>
+    </div>
+  </section>
+
+  <!-- 8. Contact -->
+  <div class="wrap" id="contact">
+    <div class="panel tint final">
+      <div class="final-copy">
+        <div>
+          <span class="eyebrow">[ Contact ]</span>
+          <h2 style="margin-top:14px">Get in <span class="b">Touch</span></h2>
+          <ul class="contact-list">
+            <li><small>Address</small><span>Khalifa City, Abu Dhabi, United Arab Emirates</span></li>
+            <li><small>Phone &amp; Mobile</small><span>+971 56 132 1039</span></li>
+            <li><small>Email &amp; Website</small><a href="mailto:liamclarke1705@gmail.com" id="email-text">liamclarke1705@gmail.com</a></li>
+            <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/lclarke1992" target="_blank" rel="noopener">/lclarke1992</a></li>
+          </ul>
+        </div>
+        <div><button class="btn" type="button" data-copy="liamclarke1705@gmail.com">Copy Email <svg><use href="#arr"/></svg></button></div>
+      </div>
+      <div class="final-art" aria-hidden="true">
+        <svg viewBox="0 0 640 400" preserveAspectRatio="xMaxYMax slice">
+          <path d="M60 20 L640 120 L640 400 L60 400 Z" fill="#12263a"/>
+          <path d="M60 20 L640 120" stroke="#2a4660" stroke-width="10"/>
+          <rect x="96" y="84" width="120" height="150" rx="14" fill="none" stroke="#7cc3e6" stroke-opacity=".5" stroke-width="2"/>
+          <circle cx="156" cy="132" r="22" fill="none" stroke="#7cc3e6" stroke-width="5"/>
+          <path d="M126 196 c4-22 56-22 60 0 M126 212 h60" fill="none" stroke="#7cc3e6" stroke-width="5" stroke-linecap="round"/>
+          <rect x="96" y="252" width="120" height="140" rx="14" fill="none" stroke="#7cc3e6" stroke-opacity=".5" stroke-width="2"/>
+          <text x="108" y="318" fill="#7cc3e6" font-family="Plus Jakarta Sans, sans-serif" font-size="40" font-weight="500">2026</text>
+          <g stroke="#7cc3e6" stroke-opacity=".18" stroke-width="2"><path d="M260 150v250M310 160v240M360 168v232M410 176v224M460 186v214M510 194v206M560 202v198M610 210v190"/></g>
+          <path d="M250 150 V 400" stroke="#7cc3e6" stroke-opacity=".4" stroke-width="2" stroke-dasharray="3 7"/>
+          <path d="M270 330 L330 270 L370 310 L430 240 L470 280 L540 200 L600 160" fill="none" stroke="#7cc3e6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M572 156 L604 156 L604 188" fill="none" stroke="#7cc3e6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap" style="margin-top:clamp(56px,8vw,110px)">
+  <div class="panel foot">
+    <div class="foot-left">
+      <div>
+        <h3>Get in Touch</h3>
+        <div class="foot-field"><svg class="mail"><use href="#mail"/></svg><span>liamclarke1705@gmail.com</span><button type="button" data-copy="liamclarke1705@gmail.com" aria-label="Copy email address"><svg><use href="#arr"/></svg></button></div>
+      </div>
+      <div class="foot-bottom"><span class="foot-name">Liam<br>Clarke</span><small>Portfolio 2026</small></div>
+    </div>
+    <div class="foot-cols">
+      <div><h4>Contact</h4><ul><li><a href="mailto:liamclarke1705@gmail.com">liamclarke1705@gmail.com</a></li><li>+971 56 132 1039</li><li>Khalifa City, Abu Dhabi, United Arab Emirates</li></ul></div>
+      <div><h4>Pages</h4><ul><li><a href="#about">About Me</a></li><li><a href="#projects">Projects</a></li><li><a href="#speaking">Speaking</a></li><li><a href="#accreditation">Accreditation</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>LinkedIn</h4><ul><li><a href="https://www.linkedin.com/in/lclarke1992" target="_blank" rel="noopener">/lclarke1992</a></li></ul></div>
+    </div>
+  </div>
+</footer>
+
+<dialog id="viewer" aria-label="Image viewer">
+  <div class="viewer"><img id="viewer-img" alt=""><div class="viewer-bar"><span id="viewer-cap"></span><button type="button" id="viewer-close">Close</button></div></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  const arrIcon = d => `<svg viewBox="0 0 16 16"><path d="${d < 0 ? 'M14 8H3M7 4L3 8l4 4' : 'M2 8h11M9 4l4 4-4 4'}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+  // Slideshows
+  document.querySelectorAll('[data-show]').forEach(show => {
+    const slides = [...show.querySelectorAll('.show-slide')];
+    let i = 0;
+    const cap = show.dataset.caption && document.getElementById(show.dataset.caption);
+    const thumbsEl = show.dataset.thumbs && document.getElementById(show.dataset.thumbs);
+    let dots = [], thumbs = [];
+    if (slides.length > 1) {
+      const nav = document.createElement('div'); nav.className = 'show-nav';
+      const dotWrap = document.createElement('div'); dotWrap.className = 'show-dots';
+      dots = slides.map((_, k) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', 'Show image ' + (k + 1)); b.onclick = () => go(k); dotWrap.append(b); return b; });
+      const arrows = document.createElement('div'); arrows.className = 'show-arrows';
+      [-1, 1].forEach(d => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', d < 0 ? 'Previous image' : 'Next image'); b.innerHTML = arrIcon(d); b.onclick = () => go(i + d); arrows.append(b); });
+      nav.append(dotWrap, arrows); show.append(nav);
+    }
+    if (thumbsEl) thumbs = slides.map((s, k) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', s.dataset.title || 'Image ' + (k + 1)); const im = s.querySelector('img'); b.innerHTML = `<img src="${im.getAttribute('src')}" alt="">`; b.onclick = () => go(k); thumbsEl.append(b); return b; });
+    function go(k) {
+      i = (k + slides.length) % slides.length;
+      slides.forEach((s, n) => { s.classList.toggle('on', n === i); const v = s.querySelector('video'); if (v) { if (n === i && visible) v.play().catch(() => {}); else v.pause(); } });
+      dots.forEach((d, n) => d.classList.toggle('on', n === i));
+      thumbs.forEach((t, n) => t.classList.toggle('on', n === i));
+      if (thumbs[i]) thumbs[i].scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      if (cap) { cap.querySelector('h3').textContent = slides[i].dataset.title || ''; cap.querySelector('p').textContent = slides[i].dataset.sub || ''; }
+    }
+    let visible = false;
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => { visible = e.isIntersecting; go(i); }), { threshold: 0.4 }).observe(show);
+    go(0);
+  });
+
+  // Media design video plays when in view
+  document.querySelectorAll('.mcard video').forEach(v => {
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(() => {}) : v.pause()), { threshold: 0.4 }).observe(v);
+  });
+
+  // Project carousel arrows
+  document.querySelectorAll('[data-scroll]').forEach(btn => btn.addEventListener('click', () => {
+    const t = document.getElementById(btn.dataset.scroll);
+    const step = t.firstElementChild.getBoundingClientRect().width + parseFloat(getComputedStyle(t).columnGap || 0);
+    const atEnd = t.scrollLeft + t.clientWidth >= t.scrollWidth - 4, atStart = t.scrollLeft <= 4, dir = +btn.dataset.dir;
+    if (dir > 0 && atEnd) t.scrollTo({ left: 0, behavior: 'smooth' });
+    else if (dir < 0 && atStart) t.scrollTo({ left: t.scrollWidth, behavior: 'smooth' });
+    else t.scrollBy({ left: dir * step, behavior: 'smooth' });
+  }));
+
+  // Image viewer
+  const dlg = document.getElementById('viewer'), img = document.getElementById('viewer-img'), cap = document.getElementById('viewer-cap');
+  document.querySelectorAll('[data-full]').forEach(b => b.addEventListener('click', () => {
+    const inner = b.querySelector('img'); img.src = inner ? inner.currentSrc || inner.src : b.dataset.full; img.alt = b.dataset.cap; cap.textContent = b.dataset.cap;
+    dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
+  }));
+  document.getElementById('viewer-close').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+  // Copy email
+  const toast = document.getElementById('toast');
+  const show = msg => { toast.textContent = msg; toast.classList.add('on'); clearTimeout(show.t); show.t = setTimeout(() => toast.classList.remove('on'), 2200); };
+  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    const v = b.dataset.copy;
+    const fallback = () => { const el = document.getElementById('email-text'); const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); el.scrollIntoView({ block: 'center', behavior: 'smooth' }); show('Email selected. Copy it from the box.'); };
+    try { navigator.clipboard.writeText(v).then(() => show('Email copied: ' + v), fallback); } catch (e) { fallback(); }
+  }));
+})();
+</script>
+
+</body>
+</html>
