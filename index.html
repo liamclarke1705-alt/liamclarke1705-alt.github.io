@@ -69,7 +69,7 @@ img { display: block; max-width: 100%; height: auto; }
 section { padding-block: clamp(56px, 8vw, 110px); }
 
 /* Header */
-.head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); }
+.head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: #fff; box-shadow: 0 1px 0 var(--line); }
 .head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 18px; }
 .logo { font-size: 1.3rem; line-height: 1.05; font-weight: 500; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
 .nav { display: flex; gap: 34px; }
@@ -380,7 +380,7 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <ul class="tags"><li>Digital Innovation Specialist</li><li>M.Ed Digital Leadership</li></ul>
         <a class="btn" href="#contact">Contact <svg><use href="#arr"/></svg></a>
       </div>
-      <div class="hero-photo"><img src="img/headshot.webp" alt="Portrait of Liam Clarke" width="724" height="799"></div>
+      <div class="hero-photo"><img src="img/headshot.webp" decoding="async" alt="Portrait of Liam Clarke" width="724" height="799"></div>
       <div class="hero-right">
         <h1>Digital Innovation <span class="b">Specialist</span></h1>
         <p>I'm a digital transformation leader with an M.Ed in Digital Leadership (First Class Honours), specialising in <span class="b">technology and AI adoption at scale</span>. Through strategy, coaching and mentoring, I turn new tools into everyday practice for 400+ educators and 4,000+ students.</p>
@@ -410,7 +410,7 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
           <ul class="chips" aria-label="Highlights"><li>BETT</li><li>Apple HQ London</li><li>Aldar's Digital Task Force</li></ul>
         </div>
       </div>
-      <div class="serious-photo"><img src="img/stage-talk.webp" alt="Liam presenting on stage at a conference" width="600" height="800"></div>
+      <div class="serious-photo"><img src="img/stage-talk.webp" decoding="async" alt="Liam presenting on stage at a conference" width="600" height="800"></div>
     </div>
   </div>
 
@@ -448,9 +448,9 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <article class="slide">
           <div class="show" data-show>
             <div class="show-frame">
-              <figure class="show-slide on"><video src="video/hub-demo.mp4" poster="img/hub-poster.webp" muted loop playsinline preload="metadata" aria-label="Walkthrough of the Innovation Hub platform"></video></figure>
-              <figure class="show-slide"><img src="img/hub-videos-1.webp" alt="Innovation Hub training video library"></figure>
-              <figure class="show-slide"><img src="img/hub-videos-2.webp" alt="More Innovation Hub training videos"></figure>
+              <figure class="show-slide on"><video src="video/hub-demo.mp4" poster="img/hub-poster.webp" muted loop playsinline preload="none" aria-label="Walkthrough of the Innovation Hub platform"></video></figure>
+              <figure class="show-slide"><img src="img/hub-videos-1.webp" loading="lazy" decoding="async" alt="Innovation Hub training video library"></figure>
+              <figure class="show-slide"><img src="img/hub-videos-2.webp" loading="lazy" decoding="async" alt="More Innovation Hub training videos"></figure>
             </div>
           </div>
           <div class="slide-copy">
@@ -463,10 +463,10 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <article class="slide">
           <div class="show" data-show>
             <div class="show-frame">
-              <figure class="show-slide cover on"><img src="img/training-room.webp" alt="Liam leading a staff training session"></figure>
-              <figure class="show-slide cover"><img src="img/staff-training.webp" alt="Staff taking part in a CPD workshop"></figure>
-              <figure class="show-slide cover"><img src="img/presenting-screen.webp" alt="Liam presenting new tools to staff"></figure>
-              <figure class="show-slide"><img src="img/cpd-sessions.webp" alt="Covers of CPD sessions Liam has run, including ClassVR, MagicSchool, AI Teacher Toolkit, Apple Classroom, iPad and Seesaw"></figure>
+              <figure class="show-slide cover on"><img src="img/training-room.webp" loading="lazy" decoding="async" alt="Liam leading a staff training session"></figure>
+              <figure class="show-slide cover"><img src="img/staff-training.webp" loading="lazy" decoding="async" alt="Staff taking part in a CPD workshop"></figure>
+              <figure class="show-slide cover"><img src="img/presenting-screen.webp" loading="lazy" decoding="async" alt="Liam presenting new tools to staff"></figure>
+              <figure class="show-slide"><img src="img/cpd-sessions.webp" loading="lazy" decoding="async" alt="Covers of CPD sessions Liam has run, including ClassVR, MagicSchool, AI Teacher Toolkit, Apple Classroom, iPad and Seesaw"></figure>
             </div>
           </div>
           <div class="slide-copy">
@@ -479,10 +479,10 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <article class="slide">
           <div class="show" data-show>
             <div class="show-frame">
-              <figure class="show-slide on"><img src="img/roadmap-1.webp" alt="ICT skills roadmap: topics and outcomes for one year group"></figure>
-              <figure class="show-slide"><img src="img/roadmap-2.webp" alt="ICT skills roadmap for another year group"></figure>
-              <figure class="show-slide"><img src="img/roadmap-3.webp" alt="Year 3 ICT skills roadmap"></figure>
-              <figure class="show-slide"><img src="img/roadmap-4.webp" alt="Year 5 ICT skills roadmap"></figure>
+              <figure class="show-slide on"><img src="img/roadmap-1.webp" loading="lazy" decoding="async" alt="ICT skills roadmap: topics and outcomes for one year group"></figure>
+              <figure class="show-slide"><img src="img/roadmap-2.webp" loading="lazy" decoding="async" alt="ICT skills roadmap for another year group"></figure>
+              <figure class="show-slide"><img src="img/roadmap-3.webp" loading="lazy" decoding="async" alt="Year 3 ICT skills roadmap"></figure>
+              <figure class="show-slide"><img src="img/roadmap-4.webp" loading="lazy" decoding="async" alt="Year 5 ICT skills roadmap"></figure>
             </div>
           </div>
           <div class="slide-copy">
@@ -495,9 +495,9 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <article class="slide">
           <div class="show" data-show>
             <div class="show-frame">
-              <figure class="show-slide on"><img src="img/iste-standards.webp" alt="The seven ISTE Standards for Students"></figure>
-              <figure class="show-slide"><img src="img/framework-doc.webp" alt="YBA Digital Competence Framework document"></figure>
-              <figure class="show-slide"><img src="img/framework-doc-2.webp" alt="Digital Competence Framework, further strands"></figure>
+              <figure class="show-slide on"><img src="img/iste-standards.webp" loading="lazy" decoding="async" alt="The seven ISTE Standards for Students"></figure>
+              <figure class="show-slide"><img src="img/framework-doc.webp" loading="lazy" decoding="async" alt="YBA Digital Competence Framework document"></figure>
+              <figure class="show-slide"><img src="img/framework-doc-2.webp" loading="lazy" decoding="async" alt="Digital Competence Framework, further strands"></figure>
             </div>
           </div>
           <div class="slide-copy">
@@ -510,10 +510,10 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <article class="slide">
           <div class="show" data-show>
             <div class="show-frame">
-              <figure class="show-slide cover on"><img src="img/students-competition.webp" alt="Liam with a student team at a digital competition"></figure>
-              <figure class="show-slide cover"><img src="img/students-exhibition.webp" alt="Students presenting their project at an exhibition"></figure>
-              <figure class="show-slide cover"><img src="img/student-robotics.webp" alt="Liam with Digital Leaders and their robotics build"></figure>
-              <figure class="show-slide cover"><img src="img/students-project.webp" alt="Students showcasing their project"></figure>
+              <figure class="show-slide cover on"><img src="img/students-competition.webp" loading="lazy" decoding="async" alt="Liam with a student team at a digital competition"></figure>
+              <figure class="show-slide cover"><img src="img/students-exhibition.webp" loading="lazy" decoding="async" alt="Students presenting their project at an exhibition"></figure>
+              <figure class="show-slide cover"><img src="img/student-robotics.webp" loading="lazy" decoding="async" alt="Liam with Digital Leaders and their robotics build"></figure>
+              <figure class="show-slide cover"><img src="img/students-project.webp" loading="lazy" decoding="async" alt="Students showcasing their project"></figure>
             </div>
           </div>
           <div class="slide-copy">
@@ -526,9 +526,9 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
         <article class="slide">
           <div class="show" data-show>
             <div class="show-frame">
-              <figure class="show-slide on"><img src="img/apple-student-roadmap.webp" alt="Apple Student Roadmap: learn new skills, take quizzes, earn badges, get certified"></figure>
-              <figure class="show-slide"><img src="img/apple-student.webp" alt="What is an Apple Student?"></figure>
-              <figure class="show-slide"><img src="img/apple-apps.webp" alt="iMovie, iPad, Keynote and Freeform badges"></figure>
+              <figure class="show-slide on"><img src="img/apple-student-roadmap.webp" loading="lazy" decoding="async" alt="Apple Student Roadmap: learn new skills, take quizzes, earn badges, get certified"></figure>
+              <figure class="show-slide"><img src="img/apple-student.webp" loading="lazy" decoding="async" alt="What is an Apple Student?"></figure>
+              <figure class="show-slide"><img src="img/apple-apps.webp" loading="lazy" decoding="async" alt="iMovie, iPad, Keynote and Freeform badges"></figure>
             </div>
           </div>
           <div class="slide-copy">
@@ -562,15 +562,15 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
     <div class="panel stage">
       <div class="show" data-show data-caption="stage-cap" data-thumbs="stage-thumbs">
         <div class="show-frame">
-          <figure class="show-slide on" data-title="Abu Dhabi Teaching Conference 2026" data-sub="From Prompt to Reality: AI-Powered Virtual Classrooms"><img src="img/adtc-2026.webp" alt="Abu Dhabi Teaching Conference 2026 speaker card for Liam Clarke"></figure>
-          <figure class="show-slide" data-title="AI in Education, Century Tech" data-sub="Panel speaker, Swiss International Scientific School, Dubai"><img src="img/century-ai-stage.webp" alt="Stage at the Century Tech AI in Education event"></figure>
-          <figure class="show-slide" data-title="AI in Education Panel" data-sub="Alongside leaders from Nord Anglia, Bloom Education and Reach British School"><img src="img/century-ai-poster.webp" alt="AI in Education panel speakers"></figure>
-          <figure class="show-slide" data-title="BETT UK 2026" data-sub="Representing Aldar Education, London"><img src="img/bett-2026.webp" alt="Liam at BETT UK 2026"></figure>
-          <figure class="show-slide" data-title="Apple HQ" data-sub="With Apple's education team on AI adoption and large-scale device deployment, London"><img src="img/apple-hq-london.webp" alt="Liam with colleagues at Apple HQ in London"></figure>
-          <figure class="show-slide" data-title="Al Ain Teachers Conference" data-sub="Confirmed presenter, Brighton College Al Ain"><img src="img/aact-presenter.webp" alt="Al Ain Teachers Conference presenter card"></figure>
-          <figure class="show-slide" data-title="Kaligo Learn &amp; Go Webinar" data-sub="From Classroom Practice to Measurable Impact"><img src="img/kaligo-webinar.webp" alt="Kaligo webinar speaker card"></figure>
-          <figure class="show-slide" data-title="Conference Keynote" data-sub="Presenting to educators across the UAE"><img src="img/stage-talk.webp" alt="Liam presenting on stage"></figure>
-          <figure class="show-slide" data-title="Workshop for Educators" data-sub="Hands-on Canva workshop"><img src="img/canva-workshop-stage.webp" alt="Liam leading a workshop on stage"></figure>
+          <figure class="show-slide on" data-title="Abu Dhabi Teaching Conference 2026" data-sub="From Prompt to Reality: AI-Powered Virtual Classrooms"><img src="img/adtc-2026.webp" loading="lazy" decoding="async" alt="Abu Dhabi Teaching Conference 2026 speaker card for Liam Clarke"></figure>
+          <figure class="show-slide" data-title="AI in Education, Century Tech" data-sub="Panel speaker, Swiss International Scientific School, Dubai"><img src="img/century-ai-stage.webp" loading="lazy" decoding="async" alt="Stage at the Century Tech AI in Education event"></figure>
+          <figure class="show-slide" data-title="AI in Education Panel" data-sub="Alongside leaders from Nord Anglia, Bloom Education and Reach British School"><img src="img/century-ai-poster.webp" loading="lazy" decoding="async" alt="AI in Education panel speakers"></figure>
+          <figure class="show-slide" data-title="BETT UK 2026" data-sub="Representing Aldar Education, London"><img src="img/bett-2026.webp" loading="lazy" decoding="async" alt="Liam at BETT UK 2026"></figure>
+          <figure class="show-slide" data-title="Apple HQ" data-sub="With Apple's education team on AI adoption and large-scale device deployment, London"><img src="img/apple-hq-london.webp" loading="lazy" decoding="async" alt="Liam with colleagues at Apple HQ in London"></figure>
+          <figure class="show-slide" data-title="Al Ain Teachers Conference" data-sub="Confirmed presenter, Brighton College Al Ain"><img src="img/aact-presenter.webp" loading="lazy" decoding="async" alt="Al Ain Teachers Conference presenter card"></figure>
+          <figure class="show-slide" data-title="Kaligo Learn &amp; Go Webinar" data-sub="From Classroom Practice to Measurable Impact"><img src="img/kaligo-webinar.webp" loading="lazy" decoding="async" alt="Kaligo webinar speaker card"></figure>
+          <figure class="show-slide" data-title="Conference Keynote" data-sub="Presenting to educators across the UAE"><img src="img/stage-talk.webp" decoding="async" alt="Liam presenting on stage"></figure>
+          <figure class="show-slide" data-title="Workshop for Educators" data-sub="Hands-on Canva workshop"><img src="img/canva-workshop-stage.webp" loading="lazy" decoding="async" alt="Liam leading a workshop on stage"></figure>
         </div>
       </div>
       <div class="stage-cap" id="stage-cap"><div><h3></h3><p></p></div></div>
@@ -578,7 +578,7 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
     </div>
 
     <div class="panel tint palace-feature">
-      <button class="mcard" style="padding:0;background:none;margin:0" data-full="img/presidential-palace.webp" data-cap="Presidential Palace, World Teachers Day"><img src="img/presidential-palace.webp" alt="Group photo at the Presidential Palace for World Teachers Day, with Liam and the UAE President highlighted"></button>
+      <button class="mcard" style="padding:0;background:none;margin:0" data-full="img/presidential-palace.webp" data-cap="Presidential Palace, World Teachers Day"><img src="img/presidential-palace.webp" loading="lazy" decoding="async" alt="Group photo at the Presidential Palace for World Teachers Day, with Liam and the UAE President highlighted"></button>
       <div class="copy">
         <span class="eyebrow">[ Recognition ]</span>
         <h3>Presidential Palace <span class="b">Invitation</span></h3>
@@ -595,11 +595,11 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
       <p>I have been commended for exceptional media design skills that balance high production quality with educational purpose. My work spans whole-school professional websites, corporate policy &amp; governance documentation, social media campaigns, brand identity assets and executive-level presentations, as well as visual materials for parent communication and strategic initiatives. On a classroom level, I am hugely passionate about creating AI-generated immersive learning environments for children, to spark creativity and enhance student engagement.</p>
     </div>
     <div class="masonry">
-      <div class="mcard video"><video src="video/newsletter-demo.mp4" poster="img/newsletter-poster.webp" muted loop playsinline controls preload="metadata" aria-label="Walkthrough of the whole-school parent newsletter website"></video><b>Community Communication</b><span>Whole-school newsletter built as a website</span></div>
-      <button class="mcard" data-full="img/digital-wellbeing-strategy.webp" data-cap="Digital Wellbeing Strategy 2025–2027"><img src="img/digital-wellbeing-strategy.webp" alt="Digital Wellbeing Strategy document cover"><b>Digital Wellbeing Strategy</b><span>Professional strategy document</span></button>
-      <button class="mcard" data-full="img/immersive-classroom.webp" data-cap="An immersive environment in use in the classroom"><img src="img/immersive-classroom.webp" alt="Students learning with an immersive scene on screen"><b>Immersive Learning in Action</b><span>Used in the classroom</span></button>
-      <button class="mcard" data-full="img/device-management.webp" data-cap="Digital media: device management guide for parents"><img src="img/device-management.webp" alt="Device management guide for parents"><b>Digital Media</b><span>Device management guide for parents</span></button>
-      <button class="mcard" data-full="img/phone-wellbeing.webp" data-cap="Mobile phone and digital watch wellbeing support"><img src="img/phone-wellbeing.webp" alt="Mobile phone and digital watch wellbeing support document"><b>Wellbeing Policy Document</b><span>Mobile phone and digital watch support</span></button>
+      <div class="mcard video"><video src="video/newsletter-demo.mp4" poster="img/newsletter-poster.webp" muted loop playsinline controls preload="none" aria-label="Walkthrough of the whole-school parent newsletter website"></video><b>Community Communication</b><span>Whole-school newsletter built as a website</span></div>
+      <button class="mcard" data-full="img/digital-wellbeing-strategy.webp" data-cap="Digital Wellbeing Strategy 2025–2027"><img src="img/digital-wellbeing-strategy.webp" loading="lazy" decoding="async" alt="Digital Wellbeing Strategy document cover"><b>Digital Wellbeing Strategy</b><span>Professional strategy document</span></button>
+      <button class="mcard" data-full="img/immersive-classroom.webp" data-cap="An immersive environment in use in the classroom"><img src="img/immersive-classroom.webp" loading="lazy" decoding="async" alt="Students learning with an immersive scene on screen"><b>Immersive Learning in Action</b><span>Used in the classroom</span></button>
+      <button class="mcard" data-full="img/device-management.webp" data-cap="Digital media: device management guide for parents"><img src="img/device-management.webp" loading="lazy" decoding="async" alt="Device management guide for parents"><b>Digital Media</b><span>Device management guide for parents</span></button>
+      <button class="mcard" data-full="img/phone-wellbeing.webp" data-cap="Mobile phone and digital watch wellbeing support"><img src="img/phone-wellbeing.webp" loading="lazy" decoding="async" alt="Mobile phone and digital watch wellbeing support document"><b>Wellbeing Policy Document</b><span>Mobile phone and digital watch support</span></button>
     </div>
   </section>
 
@@ -610,17 +610,17 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
       <h2 id="cred-h"><span class="b">Accreditation</span></h2>
     </div>
     <div class="creds">
-      <button class="cred" data-full="img/cert-med.webp" data-cap="Master of Education, Digital Leadership in Education, First Class Honours. University of Limerick"><div class="thumb"><img src="img/cert-med.webp" alt=""></div><div><b>Master of Education</b><span>Digital Leadership in Education, First Class Honours</span></div></button>
-      <button class="cred" data-full="img/cert-google-innovator.webp" data-cap="Google for Education Certified Innovator"><div class="thumb"><img src="img/cert-google-innovator.webp" alt=""></div><div><b>Google for Education</b><span>Certified Innovator</span></div></button>
-      <button class="cred" data-full="img/cert-gemini.webp" data-cap="Gemini Certified Educator"><div class="thumb"><img src="img/cert-gemini.webp" alt=""></div><div><b>Gemini Certified Educator</b><span>Google for Education</span></div></button>
-      <button class="cred" data-full="img/cert-magicschool.webp" data-cap="AI Educator Certification Level 3, MagicSchool"><div class="thumb"><img src="img/cert-magicschool.webp" alt=""></div><div><b>AI Educator Certification</b><span>Level 3, MagicSchool</span></div></button>
-      <button class="cred" data-full="img/cert-apple-teacher.webp" data-cap="Apple Teacher"><div class="thumb"><img src="img/cert-apple-teacher.webp" alt=""></div><div><b>Apple Teacher</b><span>Apple</span></div></button>
-      <button class="cred" data-full="img/cert-google-l2.webp" data-cap="Google Certified Educator Level 2"><div class="thumb"><img src="img/cert-google-l2.webp" alt=""></div><div><b>Google Certified Educator</b><span>Level 2</span></div></button>
-      <button class="cred" data-full="img/cert-google-l1.webp" data-cap="Google Certified Educator Level 1"><div class="thumb"><img src="img/cert-google-l1.webp" alt=""></div><div><b>Google Certified Educator</b><span>Level 1</span></div></button>
-      <button class="cred" data-full="img/cert-aldar-trainer.webp" data-cap="Aldar Training Academy: Becoming A Trainer Part 1 and 2"><div class="thumb"><img src="img/cert-aldar-trainer.webp" alt=""></div><div><b>Becoming A Trainer Part 1 and 2</b><span>Aldar Training Academy</span></div></button>
-      <button class="cred" data-full="img/cert-seesaw.webp" data-cap="Seesaw Pioneer '24-'25"><div class="thumb"><img src="img/cert-seesaw.webp" alt=""></div><div><b>Seesaw Pioneer '24-'25</b><span>Seesaw</span></div></button>
-      <button class="cred" data-full="img/cert-canva-ai.webp" data-cap="AI in the classroom, Canva Design School"><div class="thumb"><img src="img/cert-canva-ai.webp" alt=""></div><div><b>AI in the Classroom</b><span>Canva Design School</span></div></button>
-      <button class="cred" data-full="img/cert-canva-essentials.webp" data-cap="Teacher Essentials, Canva Design School"><div class="thumb"><img src="img/cert-canva-essentials.webp" alt=""></div><div><b>Teacher Essentials</b><span>Canva Design School</span></div></button>
+      <button class="cred" data-full="img/cert-med.webp" data-cap="Master of Education, Digital Leadership in Education, First Class Honours. University of Limerick"><div class="thumb"><img src="img/cert-med.webp" loading="lazy" decoding="async" alt=""></div><div><b>Master of Education</b><span>Digital Leadership in Education, First Class Honours</span></div></button>
+      <button class="cred" data-full="img/cert-google-innovator.webp" data-cap="Google for Education Certified Innovator"><div class="thumb"><img src="img/cert-google-innovator.webp" loading="lazy" decoding="async" alt=""></div><div><b>Google for Education</b><span>Certified Innovator</span></div></button>
+      <button class="cred" data-full="img/cert-gemini.webp" data-cap="Gemini Certified Educator"><div class="thumb"><img src="img/cert-gemini.webp" loading="lazy" decoding="async" alt=""></div><div><b>Gemini Certified Educator</b><span>Google for Education</span></div></button>
+      <button class="cred" data-full="img/cert-magicschool.webp" data-cap="AI Educator Certification Level 3, MagicSchool"><div class="thumb"><img src="img/cert-magicschool.webp" loading="lazy" decoding="async" alt=""></div><div><b>AI Educator Certification</b><span>Level 3, MagicSchool</span></div></button>
+      <button class="cred" data-full="img/cert-apple-teacher.webp" data-cap="Apple Teacher"><div class="thumb"><img src="img/cert-apple-teacher.webp" loading="lazy" decoding="async" alt=""></div><div><b>Apple Teacher</b><span>Apple</span></div></button>
+      <button class="cred" data-full="img/cert-google-l2.webp" data-cap="Google Certified Educator Level 2"><div class="thumb"><img src="img/cert-google-l2.webp" loading="lazy" decoding="async" alt=""></div><div><b>Google Certified Educator</b><span>Level 2</span></div></button>
+      <button class="cred" data-full="img/cert-google-l1.webp" data-cap="Google Certified Educator Level 1"><div class="thumb"><img src="img/cert-google-l1.webp" loading="lazy" decoding="async" alt=""></div><div><b>Google Certified Educator</b><span>Level 1</span></div></button>
+      <button class="cred" data-full="img/cert-aldar-trainer.webp" data-cap="Aldar Training Academy: Becoming A Trainer Part 1 and 2"><div class="thumb"><img src="img/cert-aldar-trainer.webp" loading="lazy" decoding="async" alt=""></div><div><b>Becoming A Trainer Part 1 and 2</b><span>Aldar Training Academy</span></div></button>
+      <button class="cred" data-full="img/cert-seesaw.webp" data-cap="Seesaw Pioneer '24-'25"><div class="thumb"><img src="img/cert-seesaw.webp" loading="lazy" decoding="async" alt=""></div><div><b>Seesaw Pioneer '24-'25</b><span>Seesaw</span></div></button>
+      <button class="cred" data-full="img/cert-canva-ai.webp" data-cap="AI in the classroom, Canva Design School"><div class="thumb"><img src="img/cert-canva-ai.webp" loading="lazy" decoding="async" alt=""></div><div><b>AI in the Classroom</b><span>Canva Design School</span></div></button>
+      <button class="cred" data-full="img/cert-canva-essentials.webp" data-cap="Teacher Essentials, Canva Design School"><div class="thumb"><img src="img/cert-canva-essentials.webp" loading="lazy" decoding="async" alt=""></div><div><b>Teacher Essentials</b><span>Canva Design School</span></div></button>
       <a class="cred" href="#contact" style="cursor:pointer;display:grid;place-content:center;text-align:center;min-height:200px"><div><b style="color:var(--blue)">Get in Touch</b><span style="color:var(--muted)">Contact</span></div></a>
     </div>
   </section>
@@ -700,7 +700,7 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
       [-1, 1].forEach(d => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', d < 0 ? 'Previous image' : 'Next image'); b.innerHTML = arrIcon(d); b.onclick = () => go(i + d); arrows.append(b); });
       nav.append(dotWrap, arrows); show.append(nav);
     }
-    if (thumbsEl) thumbs = slides.map((s, k) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', s.dataset.title || 'Image ' + (k + 1)); const im = s.querySelector('img'); b.innerHTML = `<img src="${im.getAttribute('src')}" alt="">`; b.onclick = () => go(k); thumbsEl.append(b); return b; });
+    if (thumbsEl) thumbs = slides.map((s, k) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', s.dataset.title || 'Image ' + (k + 1)); const im = s.querySelector('img'); b.innerHTML = `<img src="${im.getAttribute('src')}" loading="lazy" decoding="async" alt="">`; b.onclick = () => go(k); thumbsEl.append(b); return b; });
     function go(k) {
       i = (k + slides.length) % slides.length;
       slides.forEach((s, n) => { s.classList.toggle('on', n === i); const v = s.querySelector('video'); if (v) { if (n === i && visible) v.play().catch(() => {}); else v.pause(); } });
