@@ -706,7 +706,11 @@ dialog::backdrop { background: rgba(14, 15, 18, 0.8); }
       slides.forEach((s, n) => { s.classList.toggle('on', n === i); const v = s.querySelector('video'); if (v) { if (n === i && visible) v.play().catch(() => {}); else v.pause(); } });
       dots.forEach((d, n) => d.classList.toggle('on', n === i));
       thumbs.forEach((t, n) => t.classList.toggle('on', n === i));
-      if (thumbs[i]) thumbs[i].scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      // Keep the active thumbnail in view inside its own strip only; never scroll the page.
+      if (thumbs[i] && thumbsEl) {
+        const t = thumbs[i], left = t.offsetLeft - thumbsEl.offsetLeft;
+        if (left < thumbsEl.scrollLeft || left + t.offsetWidth > thumbsEl.scrollLeft + thumbsEl.clientWidth) thumbsEl.scrollLeft = Math.max(0, left - 8);
+      }
       if (cap) { cap.querySelector('h3').textContent = slides[i].dataset.title || ''; cap.querySelector('p').textContent = slides[i].dataset.sub || ''; }
     }
     let visible = false;
